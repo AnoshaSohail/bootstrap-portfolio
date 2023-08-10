@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1F1F3TV1ksxXeNxPePjnCm5VnyM6f6i5E4eGpB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="videocontainer"
+            style="position: absolute; z-index: -1; inset: 0px; overflow: hidden; background-size: center/cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; background-image: none;">
+            <video autoplay="" loop="" muted=""
+                style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: 1530px; height: auto;">
+                <source src="./images/pexels-john-diez-7576801-2160x3840-30fps.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="navmenu">
+            <div class="crossbtn"> <svg xmlns="http://www.w3.org/2000/svg" height="3.25em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #ffffff
+                        }
+                    </style>
+                    <path
+                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+                </svg></div>
+            <div>
+                <ul class="list-unstyled">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Education</li>
+                    <li>Portfolio</li>
+                    <li>Single Portfolio</li>
+                    <li>Testimonal</li>
+                    <li>Blog</li>
+                    <li>Single Blog</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container">
+
+                <div class="container zindex">
+                    <div class="container">
+                        <nav class="d-flex py-4">
+                            <div class="leftnav col-6 text-start">
+                                <ul class="navicons d-flex list-unstyled">
+                                    <li class="ps-4"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path
+                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                            </svg></a></li>
+                                    <li class="ps-4"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path
+                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                            </svg></a></li>
+                                    <li class="ps-4"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                            </svg></a></li>
+                                    <li class="ps-4"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path
+                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                            </svg></a></li>
+                                    <li class="ps-4"><a href="http://" target="_blank" rel="noopener noreferrer"><svg
+                                                xmlns="http://www.w3.org/2000/svg" height="1.25em"
+                                                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path
+                                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                                            </svg></a></li>
+                                </ul>
+                            </div>
+                            <div class="rightnav col-6 text-end bars"><svg xmlns="http://www.w3.org/2000/svg"
+                                    height="2em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #ffffff
+                                        }
+                                    </style>
+                                    <path
+                                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                                </svg></div>
+                        </nav>
+                        <section class="container herosection">
+                            <div class="animate__fadeInUp animate__animated">
+                                <h1>Hello!</h1>
+                                <h3>I'm Anosha Sohail</h3>
+                                <p>Web & Interface Designer</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="aboutsection">
+            <div class="container">
+                <div class="container">
+                    <div class="container">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-6 leftabout row"><img src="./images/pexels-vlad-bagacian-3987066.jpg"
+                                        class="about-img" alt="">
+                                    <button class="btn-danger dowbtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                            <style>
+                                                svg {
+                                                    fill: #ffffff !important;
+                                                    padding-right: 7px;
+                                                    padding-bottom: 3px;
+                                                }
+                                            </style>
+                                            <path
+                                                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                                        </svg>Download Resume</button>
+                                </div>
+                                <div class="col-6 rightabout">
+                                    <div class="section-title">
+                                        <h2>About Me</h2>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugiat sequi
+                                        ratione voluptatibus est officiis quibusdam aliquam obcaecati laboriosam facere.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, ad!</p>
+                                    <ul class="profile-menu list-unstyled">
+                                        <li><span>Name: </span> Anosha Sohail</li>
+                                        <li><span>Date of birth: </span> 2 September 2001</li>
+                                        <li><span>Nationality: </span> Citizen Of Pakistan</li>
+                                        <li><span>Address: </span> 23 High Hope Blvd., Some City, Some Country</li>
+                                        <li><span>Phone: </span> (123) - 456-7890, (123) - 456-7890</li>
+                                        <li><span>E-Mail: </span> anoshasohail676@gmail.com</li>
+                                    </ul>
+                                </div>
+                                <div class="aboutbottom container row">
+                                    <h2 class="col-12">My Interests</h2>
+                                    <div class="col-12 iabout">
+                                        <div class="abouthover animate__jello animate__animated">
+                                            <div class="intrest"><svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #ffffff
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z" />
+                                                </svg></div>
+                                            <p>Drawing</p>
+                                        </div>
+                                        <div class="abouthover animate__jello animate__animated">
+                                            <div class="intrest"> <svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #ffffff
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M270.7 9.7C268.2 3.8 262.4 0 256 0s-12.2 3.8-14.7 9.7L197.2 112.6c-3.4 8-5.2 16.5-5.2 25.2v77l-144 84V280c0-13.3-10.7-24-24-24s-24 10.7-24 24v56 32 24c0 13.3 10.7 24 24 24s24-10.7 24-24v-8H192v32.7L133.5 468c-3.5 3-5.5 7.4-5.5 12v16c0 8.8 7.2 16 16 16h96V448c0-8.8 7.2-16 16-16s16 7.2 16 16v64h96c8.8 0 16-7.2 16-16V480c0-4.6-2-9-5.5-12L320 416.7V384H464v8c0 13.3 10.7 24 24 24s24-10.7 24-24V368 336 280c0-13.3-10.7-24-24-24s-24 10.7-24 24v18.8l-144-84v-77c0-8.7-1.8-17.2-5.2-25.2L270.7 9.7z" />
+                                                </svg></div>
+                                            <p>Flying</p>
+                                        </div>
+                                        <div class="abouthover animate__jello animate__animated">
+                                            <div class="intrest"> <svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #ffffff
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z" />
+                                                </svg></div>
+                                            <p>Music</p>
+                                        </div>
+                                        <div class="abouthover animate__jello animate__animated">
+                                            <div class="intrest"><svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #ffffff
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z" />
+                                                </svg></div>
+                                            <p>Tea</p>
+                                        </div>
+
+
+                                        <div class="abouthover animate__jello animate__animated">
+                                            <div class="intrest"><svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                                    viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                    <style>
+                                                        svg {
+                                                            fill: #ffffff
+                                                        }
+                                                    </style>
+                                                    <path
+                                                        d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448H64c-17.7 0-32 14.3-32 32s14.3 32 32 32H208c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z" />
+                                                </svg></div>
+                                            <p>Art</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="educationsect py-5">
+            <div class="container pb-4">
+                <div class="container">
+                    <div class="container edu">
+                        <div class="container">
+                            <h2 class="">Education</h2>
+                            <div class="topicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                    viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #00d7bb
+                                        }
+                                    </style>
+                                    <path
+                                        d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                                </svg>
+                            </div>
+                            <div class="edumain  row gx-5 ">
+                                <div class="eduleft col-6 text-end p-5">
+                                    <div class="degree">
+                                        <h3>BACHALOR DIGREE</h3>
+                                        <p class="date">JAN 2009 - MAY 2010 |<span> DEFODIL UNIVERSITY</span></p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 text-start p-5"><span>Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet asperiores est
+                                        <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="edumain  row gx-5">
+                                <div class="eduleft col-6 order-1 text-start p-5">
+                                    <div class="degree">
+                                        <h3>MASTER DIGREE</h3>
+                                        <p class="date"><span> AMRDER UNIVERSITY </span>| FEB 2011 - MAR 2012</p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 order-0 text-end p-5"><span>Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet
+                                        asperiores est <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="edumain  row gx-5 ">
+                                <div class="eduleft col-6 text-end p-5">
+                                    <div class="degree">
+                                        <h3>UX DESIGNER COURSE</h3>
+                                        <p class="date">JUN 2012 - MAY 2013 |<span> CRAFTY UNIVERSITY</span></p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 text-start p-5"><span>Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet asperiores est
+                                        <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="edumain  row gx-5">
+                                <div class="eduleft col-6 order-1 text-start p-5">
+                                    <div class="degree">
+                                        <h3>INTERFACE DESIGNING</h3>
+                                        <p class="date"><span> KHELTAM NA UNIVERSITY </span>| AUG 2014 - JUN 2015</p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 order-0 text-end p-5"><span>Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet
+                                        asperiores est <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="circle1">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle2">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle3">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle4">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="finalcircle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="educationsect worksect py-5">
+            <div class="container">
+                <div class="container">
+                    <div class="container edu">
+                        <div class="container">
+                            <h2 class="">WORK EXPERIENCE</h2>
+                            <div class="topicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="3em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <style>
+                                        svg {
+                                            fill: #00d7bd !important
+                                        }
+                                    </style>
+                                    <path
+                                        d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                </svg>
+                            </div>
+                            <div class="edumain  row gx-5 ">
+                                <div class="eduleft col-6 text-end p-5">
+                                    <div class="degree">
+                                        <h3>GRAPHICS DESIGNER</h3>
+                                        <p class="date">JAN 2009 - MAY 2010 |<span> CREATIVE ALIEN</span></p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 text-start p-5"><span>Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet asperiores est
+                                        <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="edumain  row gx-5">
+                                <div class="eduleft col-6 order-1 text-start p-5">
+                                    <div class="degree">
+                                        <h3>INTERACTION DESIGNER</h3>
+                                        <p class="date"><span> CRAFTY DESIGNS </span>| FEB 2011 - MAR 2012</p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 order-0 text-end p-5"><span>Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet
+                                        asperiores est <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="edumain  row gx-5 ">
+                                <div class="eduleft col-6 text-end p-5">
+                                    <div class="degree">
+                                        <h3>UI/ UX DESIGNER</h3>
+                                        <p class="date">JUN 2012 - MAY 2013 |<span> CREATIVE ALIEN</span></p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 text-start p-5"><span>Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet asperiores est
+                                        <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="edumain  row gx-5">
+                                <div class="eduleft col-6 order-1 text-start p-5">
+                                    <div class="degree">
+                                        <h3>CREATIVE DIRECTIVE</h3>
+                                        <p class="date"><span> DIVERGENT STUDIO </span>| AUG 2014 - JUN 2015</p>
+                                    </div>
+                                </div>
+                                <div class="eduright col-6 order-0 text-end p-5"><span>Lorem ipsum dolor, sit amet
+                                        consectetur adipisicing elit.<br> Corrupti a minus dolore quibusdam! Eveniet
+                                        asperiores est <br> temporibus molestiae expedita nisi aliquid?</span></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="circle1">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle2">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle3">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle4">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="finalcircle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="pb-0" style="padding-top: 13rem;">PROFESSIONAL SKILLS</h2>
+        </section>
+        <section class="skillssect">
+            <div class="container">
+                <div class="container">
+                    <div class="container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="skillst5">
+                                        <!--=== Single Skill Strat ===-->
+                                        <div class="skillbar" data-percent="95%">
+                                            <div class="title">HTML 5</div>
+                                            <div class="count-bar color-1" style="width: 95%;">
+                                                <div class="count"><span>95%</span></div>
+                                            </div>
+                                        </div>
+                                        <!--=== Single Skill End ===-->
+
+                                        <!--=== Single Skill Strat ===-->
+                                        <div class="skillbar" data-percent="75%">
+                                            <div class="title">javascript</div>
+                                            <div class="count-bar color-1" style="width: 75%;">
+                                                <div class="count"><span>75%</span></div>
+                                            </div>
+                                        </div>
+                                        <!--=== Single Skill End ===-->
+
+                                        <!--=== Single Skill Strat ===-->
+                                        <div class="skillbar" data-percent="85%">
+                                            <div class="title">php</div>
+                                            <div class="count-bar color-1" style="width: 85%;">
+                                                <div class="count"><span>85%</span></div>
+                                            </div>
+                                        </div>
+                                        <!--=== Single Skill End ===-->
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="skillst5 float-right">
+                                        <!--=== Single Skill Strat ===-->
+                                        <div class="skillbar" data-percent="70%">
+                                            <div class="title">ILLUSTRATOR</div>
+                                            <div class="count-bar color-1" style="width: 70%;">
+                                                <div class="count"><span>70%</span></div>
+                                            </div>
+                                        </div>
+                                        <!--=== Single Skill End ===-->
+
+                                        <!--=== Single Skill Strat ===-->
+                                        <div class="skillbar" data-percent="95%">
+                                            <div class="title">photoshop</div>
+                                            <div class="count-bar color-1" style="width: 95%;">
+                                                <div class="count"><span>95%</span></div>
+                                            </div>
+                                        </div>
+                                        <!--=== Single Skill End ===-->
+
+                                        <!--=== Single Skill Strat ===-->
+                                        <div class="skillbar" data-percent="90%">
+                                            <div class="title">sony vegas</div>
+                                            <div class="count-bar color-1" style="width: 90%;">
+                                                <div class="count"><span>90%</span></div>
+                                            </div>
+                                        </div>
+                                        <!--=== Single Skill End ===-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skillscards pt-5 text-center">
+            <div class="container pt-5 pb-3">
+                <div class="container pb-5">
+                    <div class="container">
+                        <div class="container">
+                            <div class="row d-flex flex-row pt-5 justify-content-center align-items-center">
+                                <div class="col-4 card1 order-2">
+                                    
+                                        <h2>01.</h2>
+                                        <h3>WEB DESIGN</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+                                            dolor metus, eu ullamcorper turpis ornare tincidunt. Vivamus tristique
+                                            rhoncus enim. Curabitur varius est quis din pat.</p>
+                                    
+                                </div>
+                            
+                            <div class="col-4 card2 order-1">
+                                <h2>02.</h2>
+                                    <h3>UI/UX DESIGN</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+                                        dolor metus, eu ullamcorper turpis ornare tincidunt. Vivamus tristique
+                                        rhoncus enim. Curabitur varius est quis din pat.</p>
+                                </div>
+                            
+                            <div class="col-4 card3 order-3">
+                                <h2>03.</h2>
+                                    <h3>APP DESIGN</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet
+                                        dolor metus, eu ullamcorper turpis ornare tincidunt. Vivamus tristique
+                                        rhoncus enim. Curabitur varius est quis din pat.</p>
+                                </div>
+                            </div>
+                            <h2 class="pb-0 cardh2" style="padding-top: 13rem;">SOME OF MY WORKS</h2>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="myworks py-5">
+            <div class="container">
+                <div class="container">
+                    <div class="container">
+                        <div class="container">
+                            <div class="d-flex flex-column p-4 work">
+                                <div class="d-flex  justify-content-center text-center">
+                                    <div class="workimg m-3"><img src="./images/pexels-elvis-2528118.jpg" alt=""></div>
+                                    <div class="workimg m-3"><img src="./images/pexels-fauxels-3184340.jpg" alt=""></div>
+                                    <div class="workimg m-3"><img src="./images/pexels-洋榤-郭-2399840.jpg" alt=""></div>
+                                </div>
+                                <div class="d-flex justify-content-center gy-4 text-center">
+                                    <div class="workimg m-3"><img src="./images/pexels-pixabay-221185.jpg" alt=""></div>
+                                    <div class="workimg m-3"><img src="./images/pexels-luis-quintero-2128519.jpg" alt=""></div>
+                                    <div class="workimg m-3"><img src="./images/pexels-vlad-bagacian-3987066.jpg" alt=""></div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="portfolio-btn text-center">
+                                        <a href="#">Load More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clienttest">
+            <div class="container">
+                <div class="container">
+                    <div class="container">
+                        <div class="container pt-5 text-center">
+                            <h2 class="pt-5 mb-5">CLIENT TESTIMONIALS</h2>
+                            <div class="mainclient pb-5">
+                                <img src="./images/client-pic-1.jpg" alt="" class="clientimg mt-5">
+                                <h3 class="clientname">John Deo</h3>
+                                <p class="clientmsg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quos, consectetur<br> placeat voluptas ea temporibus. Lorem ipsum dolor sit amet. Lorem, ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hireme">
+            <div class="container">
+                <div class="container">
+                    <div class="container">
+                        <div class="container">
+                            <h2>
+                                HIRE ME FOR YOUR AWESOME PROJECT
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

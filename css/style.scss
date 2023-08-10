@@ -1,0 +1,84 @@
+@import "./navmenu";
+@import "./about";
+@import './education';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  .rightnav,
+  .leftnav {
+    z-index: 999;
+  }
+  .leftnav {
+    ul li a {
+      cursor: pointer;
+    }
+  }
+}
+.rightnav {
+  svg:hover {
+    cursor: pointer;
+
+    height: 2.5rem;
+  }
+}
+.leftnav {
+  svg {
+    fill: white;
+  }
+}
+header {
+  position: relative;
+  height: 100vh;
+  background: none no-repeat center center/cover;
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.7;
+    background: rgb(34, 193, 195);
+    background: radial-gradient(
+      circle,
+      rgba(34, 193, 195, 0.7820378151260504) 0%,
+      rgba(45, 253, 160, 0.7708333333333334) 100%
+    );
+  }
+}
+.herosection {
+  vertical-align: middle;
+  div {
+    padding: 35px 0;
+    padding-top: 5.5rem;
+  }
+  h1,
+  h3,
+  p {
+    color: white;
+  }
+  h1 {
+    font-size: 120px;
+    font-weight: lighter;
+  }
+  h3 {
+    font-size: 84px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  p {
+    font-size: 25px;
+    margin-top: 10px;
+    padding-left: 5px;
+  }
+}
+.zindex {
+  z-index: 999;
+  position: relative;
+}

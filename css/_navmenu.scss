@@ -1,0 +1,33 @@
+#navmenu{
+    
+display: none;
+    position: fixed;
+    z-index: 9999;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    .crossbtn{
+        float: right;
+        margin-right: 166px;
+        margin-top: -78px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    div{
+        position: relative;
+        top: 15%;
+        left: 2%;
+        color: white;
+        text-align: center;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        ul li{
+            padding: 10px;
+            font-size: 23px;
+            font-weight: 600;
+        }
+    }
+}
